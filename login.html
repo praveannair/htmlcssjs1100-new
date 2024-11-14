@@ -7,25 +7,34 @@
   </head>
   <body>
     <h1>My Application</h1>
-    <a href="index.html">Home</a> | 
-    <a href="services.html">Services</a> | 
-    <a href="about.html">About</a> | 
-    <a href="faq.html">FAQ</a> | 
+    <a href="index.html">Home</a> | <a href="services.html">Services</a> |
+    <a href="about.html">About</a> | <a href="faq.html">FAQ</a> |
     <a href="contact.html">Contact</a> |
     <a href="login.html">Login</a>
     <hr />
     <form>
-      <h3><i>Login Form</i></h3>
-      <p><input type="text" placeholder="Enter Username" /></p>
-      <p><input type="password" placeholder="Enter Password" /></p>
-      <p><input type="checkbox" />Remember Me</p>
+      <h2><i>Login Form</i></h2>
+      <p>
+        <input
+          type="text"
+          required
+          maxlength="10"
+          size="30px"
+          readonly
+          disabled
+          value="john@gmail.com"
+          placeholder="Enter Username"
+        />
+      </p>
+      <p><input type="password" required placeholder="Enter Password" /></p>
+      <p><input type="checkbox" disabled />Remember Me</p>
       <button>Login</button>
       <p><a href="">Forgotten Password</a></p>
-      <br>
-      <br>
+      <br />
+      <br />
       <a href="register.html">New user signup now</a>
     </form>
-    <hr>
+    <hr />
     <h3>@copyright 2024. All rights reserved.</h3>
   </body>
 </html>
