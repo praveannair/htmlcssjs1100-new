@@ -16,20 +16,45 @@
     <h1>This is new user registration page</h1>
     <h3>Signup Form</h3>
     <form>
+      <fieldset>
+        <legend>Personal Information</legend>
       <p><input type="text" placeholder="Full Name" required /></p>
-      <p><input type="text" placeholder="Email Address" required /></p>
+      <p><input type="email" placeholder="Email Address" required /></p>
       <p><label>Upload Profile Picture</label><input type="file"></p>
       <p><textarea rows="4" cols="150" placeholder="About you"></textarea></p>
-      <p><input type="date"></p>
+      <p>Date of Birth:<input type="date"></p>
+      <p>Age:<input type="number"></p>
+      <p>Month Joined:<input type="month"></p>
+      <p>Week Joined:<input type="week"></p>
+      <p>Portfolio Website:<input type="url"></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Details</legend>
+      <p>Preferred Time Slot:<br>
+        From:<input type="time">To:<input type="time">
+      </p>
+
+
       <p><b>Location:</b><br> <input type="radio" name="location">Hyderabad<input type="radio" name="location">Bengaluru</p>
 
-      <p><b>Course Interested</b>: <br><input type="checkbox">Java Full Stack<input type="checkbox">Python Full Stack<input type="checkbox">MERN Stack</input></p>
+      <p><b>Course Interested</b>: <br>
+        <input type="checkbox" id="java"><label for="java">Java Full Stack</label>
+        <input type="checkbox" id="python"><label for="python">Python Full Stack</label>
+        <input type="checkbox" id="mern"><label for="mern">MERN Stack</label>
+      </p>
       <p><b>Qualification:</b>
     
         <select>
+          <optgroup label="Bachelors Degree">
             <option>BE</option>
             <option>BTech</option>
+          </optgroup>
+
+          <optgroup label="Masters Degree">
+            <option>MTech</option>
             <option>MBA</option>
+          </optgroup>
         </select>
 
       </p>
@@ -40,6 +65,7 @@
       <!-- <input type="submit"> -->
        <!-- <input type="image" src="submit.jpeg"> -->
       <input type="reset">
+    </fieldset>
     </form>
   </body>
 </html>
